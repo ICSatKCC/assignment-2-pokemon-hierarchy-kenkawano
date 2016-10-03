@@ -2,7 +2,6 @@ import java.util.Random;
 import java.text.*; //imports decimal format
 /*
 * Abstract parent class for Pokemon species
-* develop branch file
 * @author Lisa Miller
 * @since 9/23/2013
 */
