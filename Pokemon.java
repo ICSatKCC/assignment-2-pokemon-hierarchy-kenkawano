@@ -63,7 +63,7 @@ public abstract class Pokemon{
       this.type2 = type2;
       
       //generate initial level
-      this.level = (double)randGen.nextInt(31);
+      this.level = (double)randGen.nextInt(30)+1;
   
       //calculate multiplier for stats
       cpMult = cpMultiplier[(int)level-1];
