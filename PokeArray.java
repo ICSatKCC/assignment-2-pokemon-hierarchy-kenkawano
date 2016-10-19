@@ -1,14 +1,14 @@
 import java.util.*;
 
-public class PokeArray.java{
-   public static void main(String[] args);
-      Scanner userIn = new Scanner (System.in);
-      String inString = new String("");
-      boolean menuloop = true;
-	  int counter = 0;
-	  private ArrayList<Pokemon> pokemonArray = new ArrayList<>();
+public class PokeArray{
+   public static void main(String[] args){
+     Scanner userIn = new Scanner (System.in);
+     String inString = new String("");
+     boolean menuloop = true;
+	 int counter = 0;
+	 private ArrayList<Pokemon> pokemonArray = new ArrayList<>();
       
-      while(menuloop = true){
+     while(menuloop = true){
          
          
          System.out.println("1. Add a Pokemon");
@@ -221,4 +221,5 @@ public class PokeArray.java{
 				break;
 		 }
 	  }
+	}
 }
