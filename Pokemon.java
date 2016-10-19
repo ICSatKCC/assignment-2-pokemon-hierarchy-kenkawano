@@ -2,7 +2,6 @@ import java.util.Random;
 import java.text.*; //imports decimal format
 /*
 * Abstract parent class for Pokemon species
-* develop branch file
 * @author Lisa Miller
 * @since 9/23/2013
 */
@@ -91,6 +90,9 @@ public abstract class Pokemon{
       double cpMult = cpMultiplier[(int)level-1];
       hP = staminaPower;
       cP = (int)((attackPower * Math.pow(defensePower,0.5) * Math.pow(staminaPower, 0.5) * Math.pow(cpMult,2))/10.0);
+      if(cP < 10){
+         cP = 10;
+      }
    }
    
    /*** public class methods ***/

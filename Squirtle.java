@@ -7,13 +7,13 @@ public class Squirtle extends Pokemon implements WaterType{
    static final int BASE_STAMINA_POWER = 88;
    
    public Squirtle(){
-      super("Squirtle", "Squirtle", 7, WATER_COLOR, 0.5, 9.0, WATER_TYPE, null,BASE_ATTACK_POWER, BASE_DEFENSE_POWER, BASE_STAMINA_POWER );   
+      super("Squirtle", "Squirtle", 7, WATER_COLOR, 0.5, 9.0, WATER_TYPE, "",BASE_ATTACK_POWER, BASE_DEFENSE_POWER, BASE_STAMINA_POWER );   
       chooseFastAttack();
       chooseSpecialAttack();
    }
    /* Constructor with name */
    public Squirtle(String name){
-      super("Squirtle", name, 1, WATER_COLOR, 0.5, 9.0, WATER_TYPE, null, BASE_ATTACK_POWER, BASE_DEFENSE_POWER, BASE_STAMINA_POWER );
+      super("Squirtle", name, 7, WATER_COLOR, 0.5, 9.0, WATER_TYPE, "", BASE_ATTACK_POWER, BASE_DEFENSE_POWER, BASE_STAMINA_POWER );
       chooseFastAttack();
       chooseSpecialAttack();
    }
@@ -22,7 +22,7 @@ public class Squirtle extends Pokemon implements WaterType{
    * to pass through to Pokemon superclass constructor
    */
    protected Squirtle(String species,String name, int num, double ht, double wt, int baseAttackPwr, int baseDefensePwr, int baseStaminaPwr){
-      super(species, name, num, WATER_COLOR, ht, wt, WATER_TYPE, null, baseAttackPwr, baseDefensePwr, baseStaminaPwr);
+      super(species, name, num, WATER_COLOR, ht, wt, WATER_TYPE, "", baseAttackPwr, baseDefensePwr, baseStaminaPwr);
       //pick Attacks
       //can happen here because all subclasses are same types as Bulbasaur
       chooseFastAttack();

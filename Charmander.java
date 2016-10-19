@@ -7,13 +7,13 @@ public class Charmander extends Pokemon implements FireType{
    static final int BASE_STAMINA_POWER = 78;
    
    public Charmander(){
-      super("Charmander", "Charmander", 4, FIRE_COLOR, 0.6, 8.5, FIRE_TYPE, null,BASE_ATTACK_POWER, BASE_DEFENSE_POWER, BASE_STAMINA_POWER );   
+      super("Charmander", "Charmander", 4, FIRE_COLOR, 0.6, 8.5, FIRE_TYPE, "",BASE_ATTACK_POWER, BASE_DEFENSE_POWER, BASE_STAMINA_POWER );   
       chooseFastAttack();
       chooseSpecialAttack();
    }
    /* Constructor with name */
    public Charmander(String name){
-      super("Charmander", name, 4, FIRE_COLOR, 0.6, 8.5, FIRE_TYPE, null, BASE_ATTACK_POWER, BASE_DEFENSE_POWER, BASE_STAMINA_POWER );
+      super("Charmander", name, 4, FIRE_COLOR, 0.6, 8.5, FIRE_TYPE, "", BASE_ATTACK_POWER, BASE_DEFENSE_POWER, BASE_STAMINA_POWER );
       chooseFastAttack();
       chooseSpecialAttack();
    }
@@ -22,7 +22,7 @@ public class Charmander extends Pokemon implements FireType{
    * to pass through to Pokemon superclass constructor
    */
    protected Charmander(String species,String name, int num, double ht, double wt, int baseAttackPwr, int baseDefensePwr, int baseStaminaPwr){
-      super(species, name, num, FIRE_COLOR, ht, wt, FIRE_TYPE, null, baseAttackPwr, baseDefensePwr, baseStaminaPwr);
+      super(species, name, num, FIRE_COLOR, ht, wt, FIRE_TYPE, "", baseAttackPwr, baseDefensePwr, baseStaminaPwr);
       //pick Attacks
       //can happen here because all subclasses are same types as Bulbasaur
       chooseFastAttack();

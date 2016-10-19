@@ -10,7 +10,7 @@ public class Charmeleon extends Charmander{
    }
    /* Constructor with name */
    public Charmeleon(String name){
-         super("Charmeleon", name, 5, 1.1, 19.0,BASE_ATTACK_POWER, BASE_DEFENSE_POWER, BASE_STAMINA_POWER );
+      super("Charmeleon", name, 5, 1.1, 19.0,BASE_ATTACK_POWER, BASE_DEFENSE_POWER, BASE_STAMINA_POWER );
    }
     /* Constructor with species and name for subclasses */
    protected Charmeleon(String species,String name, int num, double ht, double wt, int baseAttackPwr, int baseDefensePwr, int baseStaminaPwr){
