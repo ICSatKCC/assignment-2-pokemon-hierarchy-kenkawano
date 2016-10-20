@@ -7,13 +7,13 @@ public class Vaporeon extends Eevee implements WaterType{
     static final int BASE_STAMINA_POWER = 260;
 	
 	public Vaporeon(){
-		super ("Vaporeon", "Vaporeon", 134, WATER_COLOR, 1.0, 29.0, WATER_TYPE, "", BASE_ATTACK_POWER, BASE_DEFENSE_POWER, BASE_STAMINA_POWER);
+		super ("Vaporeon", "Vaporeon", 134, WATER_COLOR, 1.0, 29.0, WATER_TYPE, BASE_ATTACK_POWER, BASE_DEFENSE_POWER, BASE_STAMINA_POWER);
 		chooseFastAttack();
 		chooseSpecialAttack();
 	}
 	
 	public Vaporeon(String name){
-		super ("Vaporeon", name, 134, WATER_COLOR, 1.0, 29.0, WATER_TYPE, "", BASE_ATTACK_POWER, BASE_DEFENSE_POWER, BASE_STAMINA_POWER);
+		super ("Vaporeon", name, 134, WATER_COLOR, 1.0, 29.0, WATER_TYPE, BASE_ATTACK_POWER, BASE_DEFENSE_POWER, BASE_STAMINA_POWER);
 		chooseFastAttack();
 		chooseSpecialAttack();
 	}

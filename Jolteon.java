@@ -7,13 +7,13 @@ public class Jolteon extends Eevee implements ElectricType{
    static final int BASE_STAMINA_POWER = 130;
 	
 	public Jolteon(){
-		super ("Jolteon", "Jolteon", 135, ELECTRIC_COLOR, 0.8, 24.5, ELECTRIC_TYPE, "", BASE_ATTACK_POWER, BASE_DEFENSE_POWER, BASE_STAMINA_POWER);
+		super ("Jolteon", "Jolteon", 135, ELECTRIC_COLOR, 0.8, 24.5, ELECTRIC_TYPE, BASE_ATTACK_POWER, BASE_DEFENSE_POWER, BASE_STAMINA_POWER);
 		chooseFastAttack();
 		chooseSpecialAttack();
 	}
 	
 	public Jolteon(String name){
-		super ("Jolteon", name, 135, ELECTRIC_COLOR, 0.8, 24.5, ELECTRIC_TYPE, "", BASE_ATTACK_POWER, BASE_DEFENSE_POWER, BASE_STAMINA_POWER);
+		super ("Jolteon", name, 135, ELECTRIC_COLOR, 0.8, 24.5, ELECTRIC_TYPE, BASE_ATTACK_POWER, BASE_DEFENSE_POWER, BASE_STAMINA_POWER);
 		chooseFastAttack();
 		chooseSpecialAttack();
 	}
@@ -47,7 +47,7 @@ public class Jolteon extends Eevee implements ElectricType{
 		modifier = (double)(rand.nextInt(16) + 85)/100.0; //random modifier .85 - 1.00
 		s = name+ " performed " + fastAttack + " on " + victim.getSpecies();
 	  
-		if(vType.equals("Water") || vType.equals("Flying"){
+		if(vType.equals("Water") || vType.equals("Flying")){
 			s = s + "\n It was super effective!";
 			modifier = modifier * 2.0;
 	    }
@@ -82,7 +82,7 @@ public class Jolteon extends Eevee implements ElectricType{
       
 		s = name+ " performed " + specialAttack + " on " + victim.getSpecies();
       
-		if(vType.equals("Water") || vType.equals("Flying"){
+		if(vType.equals("Water") || vType.equals("Flying")){
 			s = s + "\n It was super effective!";
 			modifier = modifier * 2.0;
 	    }

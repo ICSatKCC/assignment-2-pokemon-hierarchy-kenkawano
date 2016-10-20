@@ -21,7 +21,7 @@ public class Eevee extends Pokemon implements NormalType{
    * This allows subclass specific name, number, height, weight, and basePowers 
    * to pass through to Pokemon superclass constructor
    */
-   protected Eevee(String species,String name, int num, String color, double ht, double wt, String type, int baseAttackPwr, int baseDefensePwr, int baseStaminaPwr){
+   public Eevee(String species,String name, int num, String color, double ht, double wt, String type, int baseAttackPwr, int baseDefensePwr, int baseStaminaPwr){
       super(species, name, num, color, ht, wt, type, "", baseAttackPwr, baseDefensePwr, baseStaminaPwr);
       //pick Attacks
       //can happen here because all subclasses are same types as Bulbasaur

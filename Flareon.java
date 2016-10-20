@@ -7,13 +7,13 @@ public class Flareon extends Eevee implements FireType{
    static final int BASE_STAMINA_POWER = 130;
 	
 	public Flareon(){
-		super ("Flareon", "Flareon", 136, FIRE_COLOR, 0.9, 25.0, FIRE_TYPE, "", BASE_ATTACK_POWER, BASE_DEFENSE_POWER, BASE_STAMINA_POWER);
+		super ("Flareon", "Flareon", 136, FIRE_COLOR, 0.9, 25.0, FIRE_TYPE, BASE_ATTACK_POWER, BASE_DEFENSE_POWER, BASE_STAMINA_POWER);
 		chooseFastAttack();
 		chooseSpecialAttack();
 	}
 	
 	public Flareon(String name){
-		super ("Flareon", name, 136, FIRE_COLOR, 0.9, 25.0, FIRE_TYPE, "", BASE_ATTACK_POWER, BASE_DEFENSE_POWER, BASE_STAMINA_POWER);
+		super ("Flareon", name, 136, FIRE_COLOR, 0.9, 25.0, FIRE_TYPE, BASE_ATTACK_POWER, BASE_DEFENSE_POWER, BASE_STAMINA_POWER);
 		chooseFastAttack();
 		chooseSpecialAttack();
 	}

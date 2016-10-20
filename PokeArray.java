@@ -23,8 +23,8 @@ public class PokeArray{
          switch(inString){
             case "1":
                System.out.println("1. Bulbasaur");
-               System.out.println("2. Venusaur");
-               System.out.println("3. Ivysaur");
+               System.out.println("2. Ivysaur");
+               System.out.println("3. Venusaur");
                System.out.println("4. Charmander");
                System.out.println("5. Charmeleon");
                System.out.println("6. Charizard");
