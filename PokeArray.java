@@ -8,7 +8,7 @@ public class PokeArray{
    int counter = 0;
 	ArrayList<Pokemon> pokemonArray = new ArrayList<Pokemon>();
       
-     while(menuloop = true){
+     while(menuloop){
          
          
          System.out.println("1. Add a Pokemon");
