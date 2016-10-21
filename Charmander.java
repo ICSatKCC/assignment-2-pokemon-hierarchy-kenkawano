@@ -23,10 +23,7 @@ public class Charmander extends Pokemon implements FireType{
    */
    protected Charmander(String species,String name, int num, double ht, double wt, int baseAttackPwr, int baseDefensePwr, int baseStaminaPwr){
       super(species, name, num, FIRE_COLOR, ht, wt, FIRE_TYPE, "", baseAttackPwr, baseDefensePwr, baseStaminaPwr);
-      //pick Attacks
-      //can happen here because all subclasses are same types as Bulbasaur
-      chooseFastAttack();
-      chooseSpecialAttack();
+     
    }
    
    protected void chooseFastAttack(){
