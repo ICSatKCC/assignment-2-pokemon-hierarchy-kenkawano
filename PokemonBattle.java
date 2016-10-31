@@ -155,8 +155,8 @@ public class PokemonBattle{
 			System.out.println("Invalid");   
     }
   }
-   int counter = 0
-   int counter2 = 0
+   int counter = 0;
+   int counter2 = 0;
    loop = true;
    boolean loop2 = true;
    boolean loop3 = true;
@@ -164,7 +164,7 @@ public class PokemonBattle{
 		loop2 = true;
 		loop3 = true;
 		while(loop2){
-			if(counter < 2){
+			if(counter < 3){
 				System.out.println("It is Player One's turn.");
 				System.out.println("1. Fast Attack");
 				System.out.println("0. Pass");
@@ -174,7 +174,7 @@ public class PokemonBattle{
 				
 				switch(inString){
 					case"1":
-						System.out.println(battleArray(0).performFastAttack(battleArray(1)));
+						System.out.println(battleArray.get(0).performFastAttack(battleArray.get(1)));
 						loop2 = false;
 						break;
 					case"0":
@@ -185,7 +185,7 @@ public class PokemonBattle{
 					default:
 						System.out.println("Invalid");
 				}
-				if(battleArray(1).getHP() == 0){
+				if(battleArray.get(1).getHP() == 0){
 					System.out.println("Player One wins.");
 					loop = false;
 					loop2 = false;
@@ -203,22 +203,22 @@ public class PokemonBattle{
 				
 				switch(inString){
 					case "1":
-						System.out.println(battleArray(0).performFastAttack(battleArray(1)));
+						System.out.println(battleArray.get(0).performFastAttack(battleArray.get(1)));
 						loop2 = false;
 						break;
 					case "2":
-						System.out.println(battleArray(0).performSpecialAttack(battleArray(1)));
+						System.out.println(battleArray.get(0).performSpecialAttack(battleArray.get(1)));
 						loop2 = false;
 						counter = 0;
 						break;
 					case "0":
 						System.out.println("Player One passes.");
 						counter ++;
-						break:
+						break;
 					default:
 						System.out.println("Invalid");
 				}
-				if(battleArray(1).getHP() == 0){
+				if(battleArray.get(1).getHP() == 0){
 					System.out.println("Player One wins.");
 					loop = false;
 					loop2 = false;
@@ -227,7 +227,7 @@ public class PokemonBattle{
 			}
 		}
 		while(loop3){
-			if(counter2 < 2){
+			if(counter2 < 3){
 				System.out.println("It is Player Two's turn.");
 				System.out.println("1. Fast Attack");
 				System.out.println("0. Pass");
@@ -237,7 +237,7 @@ public class PokemonBattle{
 				
 				switch(inString){
 					case"1":
-						System.out.println(battleArray(1).performFastAttack(battleArray(0)));
+						System.out.println(battleArray.get(1).performFastAttack(battleArray.get(0)));
 						loop3 = false;
 						break;
 					case"0":
@@ -248,7 +248,7 @@ public class PokemonBattle{
 					default:
 						System.out.println("Invalid");
 				}
-				if(battleArray(0).getHP() == 0){
+				if(battleArray.get(0).getHP() == 0){
 					System.out.println("Player Two wins.");
 					loop = false;
 					loop2 = false;
@@ -266,22 +266,22 @@ public class PokemonBattle{
 				
 				switch(inString){
 					case "1":
-						System.out.println(battleArray(1).performFastAttack(battleArray(0)));
+						System.out.println(battleArray.get(1).performFastAttack(battleArray.get(0)));
 						loop3 = false;
 						break;
 					case "2":
-						System.out.println(battleArray(1).performSpecialAttack(battleArray(0)));
+						System.out.println(battleArray.get(1).performSpecialAttack(battleArray.get(0)));
 						loop3 = false;
 						counter2 = 0;
 						break;
 					case "0":
 						System.out.println("Player Two passes.");
 						counter ++;
-						break:
+						break;
 					default:
 						System.out.println("Invalid");
 				}
-				if(battleArray(0).getHP() == 0){
+				if(battleArray.get(0).getHP() == 0){
 					System.out.println("Player Two wins.");
 					loop = false;
 					loop2 = false;

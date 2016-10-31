@@ -366,9 +366,9 @@ public class PokeArray{
 			   break;
             case "2":
 			System.out.println("You have " + pokemonArray.size() + " pokemon.");
-            //  for(int i = 0; i<6; i++){
-			//		System.out.println(pokemonArray(i).toString());
-			//   }
+              for(int i = 0; i<pokemonArray.size(); i++){
+					System.out.println(pokemonArray.get(i).toString());
+			     }
                break;
             case "0":
 				   System.out.println("Ending program.");
