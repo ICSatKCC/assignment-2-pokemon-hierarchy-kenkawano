@@ -62,7 +62,7 @@ public abstract class Pokemon{
       this.type2 = type2;
       
       //generate initial level
-      this.level = (double)randGen.nextInt(31);
+      this.level = (double)randGen.nextInt(30)+1;
   
       //calculate multiplier for stats
       cpMult = cpMultiplier[(int)level-1];
@@ -90,6 +90,9 @@ public abstract class Pokemon{
       double cpMult = cpMultiplier[(int)level-1];
       hP = staminaPower;
       cP = (int)((attackPower * Math.pow(defensePower,0.5) * Math.pow(staminaPower, 0.5) * Math.pow(cpMult,2))/10.0);
+      if(cP < 10){
+         cP = 10;
+      }
    }
    
    /*** public class methods ***/
